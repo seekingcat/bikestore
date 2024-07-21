@@ -25,14 +25,55 @@ body {
 
 }
 
-
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
-
+display: flex;
 
 }
+
+#logo {
+  width: 10rem;
+  height: 4rem
+}
+
+nav {
+  width: 80%;
+}
+
+nav ul {
+  display: flex;
+  width: 100%;
+}
+
+nav ul li {
+  width: 100%;
+}
+
+main  {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mainText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mainSection {
+  width: 50%
+}
+
+#heroImage {
+  width: 90%;
+}
+
 
 footer {
 
