@@ -5,16 +5,16 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -22,24 +22,25 @@
 /*******************************************/
 
 body {
-
+  color: #1f1a38;
+  background: #E6E8E6
+  font-family: 'Merriweather', serif;
 }
 
 .container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
-display: flex;
-
+  display: flex;
 }
 
 #logo {
   width: 10rem;
-  height: 4rem
+  height: 4rem;
 }
 
 nav {
@@ -49,15 +50,20 @@ nav {
 nav ul {
   display: flex;
   width: 100%;
+  justify-content: flex-end;
 }
 
+li {
+  list-style-type: none;
+}
 nav ul li {
-  width: 100%;
+  width: 15%;
+  font-size: 1.1rem;
 }
 
-main  {
+main {
   display: flex;
-  justify-content: space-around;
+  height: 500px;
 }
 
 .mainText {
@@ -66,18 +72,58 @@ main  {
   justify-content: center;
 }
 
-.mainSection {
-  width: 50%
+.mainSection, .aboutSection {
+  width: 50%;
+  padding: 3rem;
 }
 
 #heroImage {
-  width: 90%;
+  width: 340px;
+  height: 440px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
 }
 
+#department {
+  padding: 2rem 0;
+  margin: 2rem 0;
+}
+#department h2 {
+  text-align: center;
+}
+#departmentList {
+  display: flex;
+  justify-content: space-around;
+}
+i {
+  padding-right: 10px;
+  color: #fdd52f;
+  font-size: 2rem;
+}
+
+#about {
+  display: flex;
+  height: 500px;
+}
+
+#about img {
+  width: 350px;
+  height: 250px;
+}
+
+#aboutText {
+  padding-left: 20px;
+}
+
+#services {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2rem;
+}
 
 footer {
-
-  
 }
 /******************************************
 /* ADDITIONAL STYLES

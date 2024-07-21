@@ -1,76 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-  	<meta charset="utf-8">
-  	<meta name="description" content="Your description goes here">
-  	<meta name="keywords" content="one, two, three">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<title>Blank Template</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Your description goes here" />
+    <meta name="keywords" content="one, two, three" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<div class="container">
+    <title>Blank Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/497a4f75df.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="images/logo.png" alt="" id="logo" />
+        <nav>
+          <ul>
+            <li>About</li>
+            <li>Bikes</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </header>
 
-			<header>
-				<img src="images/logo.png" alt="" id="logo">
-				<nav>
-					<ul>
-						<li>About</li>
-						<li>Bikes</li>
-						<li>Contact</li>
-					</ul>
-				</nav>
-			</header>
-			<main>
-				<section class="mainSection mainText">
-					<h1>Riding</h1>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis ratione, provident quod quia neque officiis, incidunt, quo fugiat molestiae a iure mollitia natus. Fugiat itaque eligendi dolores vero alias? Sequi!</p>
-					<a href="">SEE OUR RANGE</a>
-				</section>
-				<section class="mainSection">
-					<img src="images/marc-kleen-Hg5-RwwjHu0-unsplash.jpg" alt="" id="heroImage">
-				</section>
-			</main>
-			<section id="brands">
-				<h2>Our departments</h2>
-				<ul id="brandList">
-					<li>Adult bikes</li>
-					<li>Kids' bikes</li>
-					<li>Helmets and Clothing</li>
-					<li>Accessories</li>
-					<li>Components</li>
-					<li>Maintenance</li>
-				</ul>
-			</section>
-			<section id="about">
-				<section>
-					<img src="" alt="">
-				</section>
-				<section>
-					<h2>Why choose us</h2>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus labore iure in dolore, voluptatibus mollitia officiis possimus nemo autem inventore sunt earum reprehenderit expedita, animi quis voluptate itaque fugiat nisi!</p>
-				</section>
-			</section>
-			<section id="services">
-				<section>
-					<h2>Service repair</h2>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quos tempora iure modi praesentium perferendis asperiores odit, deleniti nulla placeat soluta eligendi blanditiis! Praesentium, exercitationem inventore labore laborum eaque nostrum.</p>
-				</section>
-				<section>
-					<h2>Bike accessories</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos temporibus fugit, et quidem blanditiis voluptate similique in cupiditate veniam harum, fugiat, culpa tempora est magni optio sit dolores quae. Ipsam!</p>
-				</section>
-				<section>
-					<h2>Klarna Accepted</h2>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit amet modi praesentium quidem animi commodi quibusdam dolore corporis similique qui esse doloremque delectus porro, sint voluptatibus maiores, fuga nostrum ad?</p>
-				</section>
-				
-			</section>
-		</div>
-			<script type="text/javascript" src="js/main.js"></script>
-	</body>
+      <main>
+        <section class="mainSection mainText">
+          <h1>For All Your Riding Needs</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis ratione, provident quod quia neque officiis, incidunt,
+            quo fugiat molestiae a iure mollitia natus. Fugiat itaque eligendi
+            dolores vero alias? Sequi!
+          </p>
+          <a href="">SEE OUR RANGE</a>
+        </section>
+        <section class="mainSection">
+          <img
+            src="images/marc-kleen-Hg5-RwwjHu0-unsplash.jpg"
+            alt=""
+            id="heroImage"
+          />
+        </section>
+      </main>
+
+      <section id="department">
+        <h2>Our departments</h2>
+        <ul id="departmentList">
+          <li><i class="fa-solid fa-bicycle"></i>Adult bikes</li>
+          <li><i class="fa-solid fa-child-reaching"></i>Kids' bikes</li>
+          <li><i class="fa-solid fa-helmet-safety"></i>Helmets and Clothing</li>
+          <li><i class="fa-solid fa-bottle-water"></i>Accessories</li>
+          <li><i class="fa-solid fa-gears"></i>Components</li>
+          <li><i class="fa-solid fa-wrench"></i>Maintenance</li>
+        </ul>
+      </section>
+
+      <section id="about">
+        <section>
+          <img
+            src="/images/dan-gold-6QzVeBPmpCE-unsplash.jpg"
+            alt=""
+            class="aboutSection"
+          />
+        </section>
+        <section id="aboutText" class="aboutSection">
+          <h2>Why choose us</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            labore iure in dolore, voluptatibus mollitia officiis possimus nemo
+            autem inventore sunt earum reprehenderit expedita, animi quis
+            voluptate itaque fugiat nisi!
+          </p>
+          <a href="">Read More</a>
+        </section>
+      </section>
+
+      <section>
+        <h2>Our Services</h2>
+        <section id="services">
+          <section>
+            <h2>Service repair</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Cupiditate quos tempora iure modi praesentium perferendis
+              asperiores odit, deleniti nulla placeat soluta eligendi
+              blanditiis! Praesentium, exercitationem inventore labore laborum
+              eaque nostrum.
+            </p>
+          </section>
+          <section>
+            <h2>Bike accessories</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+              temporibus fugit, et quidem blanditiis voluptate similique in
+              cupiditate veniam harum, fugiat, culpa tempora est magni optio sit
+              dolores quae. Ipsam!
+            </p>
+          </section>
+          <section>
+            <h2>Klarna Accepted</h2>
+            <p>
+              Split your purchase into three payments so you can spread the cost
+              of your purchase over time. Enter the credit or debit card details
+              of your choice and make automatic payments every 30 days.
+            </p>
+            <a href="https://www.cycleking.co.uk/pages/klarna/"
+              >Find Out More</a
+            >
+          </section>
+        </section>
+      </section>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
