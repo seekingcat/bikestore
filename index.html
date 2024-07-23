@@ -23,27 +23,24 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <img src="images/logo.png" alt="" id="logo" />
-        <nav>
-          <ul>
-            <li>About</li>
-            <li>Bikes</li>
-            <li>Contact</li>
-          </ul>
+      <header class="header">
+        <div class="logo"><img src="/images/logo.png" alt="" id="logo"></div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-      </header>
+    </header>
 
       <main>
         <section class="mainSection mainText">
-          <h1>For All Your Riding Needs</h1>
+          <h1>For All Your Riding Needs In Croydon</h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Perspiciatis ratione, provident quod quia neque officiis, incidunt,
-            quo fugiat molestiae a iure mollitia natus. Fugiat itaque eligendi
-            dolores vero alias? Sequi!
+            Whether you are looking for bikes, scooters or cycling essentials, Cycle King Croydon has got you covered.
           </p>
-          <a href="">SEE OUR RANGE</a>
+          <a href="https://www.cycleking.co.uk/bikes/instock" class="buttonLink" target="_blank">SEE OUR RANGE</a>
         </section>
         <section class="mainSection">
           <img
@@ -57,58 +54,50 @@
       <section id="department">
         <h2>Our departments</h2>
         <ul id="departmentList">
-          <li><i class="fa-solid fa-bicycle"></i>Adult bikes</li>
-          <li><i class="fa-solid fa-child-reaching"></i>Kids' bikes</li>
-          <li><i class="fa-solid fa-helmet-safety"></i>Helmets and Clothing</li>
-          <li><i class="fa-solid fa-bottle-water"></i>Accessories</li>
-          <li><i class="fa-solid fa-gears"></i>Components</li>
-          <li><i class="fa-solid fa-wrench"></i>Maintenance</li>
+          <li><a href=""><i class="fa-solid fa-child-reaching"></i></a>Kids' bikes</li>
+          <li><a href=""><i class="fa-solid fa-bicycle"></i></a>Adult bikes</li>
+          <li><a href=""><i class="fa-solid fa-helmet-safety"></i></a>Helmets and Clothing</li>
+          <li><a href=""><i class="fa-solid fa-bottle-water"></i></a>Accessories</li>
+          <li><a href=""><i class="fa-solid fa-gears"></i></a>Components</li>
+          <li><a href=""><i class="fa-solid fa-wrench"></i></a>Maintenance</li>
         </ul>
       </section>
 
       <section id="about">
-        <section>
+        <section class="aboutSection">
           <img
             src="/images/dan-gold-6QzVeBPmpCE-unsplash.jpg"
             alt=""
-            class="aboutSection"
+            id="aboutImage"
           />
         </section>
         <section id="aboutText" class="aboutSection">
           <h2>Why choose us</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
-            labore iure in dolore, voluptatibus mollitia officiis possimus nemo
-            autem inventore sunt earum reprehenderit expedita, animi quis
-            voluptate itaque fugiat nisi!
+            With more than 60,000 bikes available, we have one that's perfect for every age or purpose. Whether buying online or in one of our 23 local stores, you’ll receive the same friendly, expert service we pride ourselves on. We prioritise ensuring that you have total confidence in us and that we're always here to help.
           </p>
-          <a href="">Read More</a>
+          <a href="" class="buttonLink">Read More</a>
         </section>
       </section>
 
-      <section>
-        <h2>Our Services</h2>
+      <section class="serviceSection">
+        <h2 id="servicesHeading">Our Services</h2>
         <section id="services">
-          <section>
+          <section class="serviceItem">
             <h2>Service repair</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Cupiditate quos tempora iure modi praesentium perferendis
-              asperiores odit, deleniti nulla placeat soluta eligendi
-              blanditiis! Praesentium, exercitationem inventore labore laborum
-              eaque nostrum.
+              We pride ourselves on our comprehensive servicing facilities that are capable of carrying out any repair at all of our retail outlets. To book your bike in for a service or repair, please contact your local store.
             </p>
+            <a href="https://www.cycleking.co.uk/pages/servicingandrepairs/" class="buttonLink" target="_blank">Book A Service</a>
           </section>
-          <section>
-            <h2>Bike accessories</h2>
+          <section class="serviceItem">
+            <h2>Click and Collect</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-              temporibus fugit, et quidem blanditiis voluptate similique in
-              cupiditate veniam harum, fugiat, culpa tempora est magni optio sit
-              dolores quae. Ipsam!
+              Our Click & Collect service offers all the benefits of shopping online combined with specialist personal retail experience in one of our stores.
             </p>
+            <a href="https://www.cycleking.co.uk/pages/clickandcollect/" class="buttonLink" target="_blank">Click And Collect</a>
           </section>
-          <section>
+          <section class="serviceItem">
             <h2>Klarna Accepted</h2>
             <p>
               Split your purchase into three payments so you can spread the cost
@@ -116,11 +105,15 @@
               of your choice and make automatic payments every 30 days.
             </p>
             <a href="https://www.cycleking.co.uk/pages/klarna/"
-              >Find Out More</a
+              class="buttonLink" target="_blank">Find Out More</a
             >
           </section>
         </section>
       </section>
+      <footer>
+        <h3>Get in touch</h3>
+        <p><a href="https://www.cycleking.co.uk/pages/contact/" id="contact">Contact us</a> if you need any assistance</p>
+      </footer>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
   </body>

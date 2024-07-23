@@ -23,50 +23,69 @@
 
 body {
   color: #1f1a38;
-  background: #E6E8E6
+  background: #e5e6e7;
   font-family: 'Merriweather', serif;
 }
 
 .container {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+
+.header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
 #logo {
-  width: 10rem;
-  height: 4rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 8rem;
 }
 
-nav {
-  width: 80%;
+.navbar {
+  margin-left: auto;
 }
 
-nav ul {
+.nav-links {
+  list-style: none;
   display: flex;
-  width: 100%;
-  justify-content: flex-end;
+  gap: 1.5rem;
 }
 
-li {
-  list-style-type: none;
-}
-nav ul li {
-  width: 15%;
-  font-size: 1.1rem;
+.nav-links li {
+  padding: 0.5rem 1rem;
 }
 
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
+  color: #1f1a38;
+
+}
+
+.nav-links a:hover {
+  color: #ddd;
+}
+
+
+/* main section */
+
+h1 {
+  font-size: 2.5rem;
+}
 main {
   display: flex;
-  height: 500px;
+  height: 60vh;
 }
 
-.mainText {
+.mainText, #aboutText {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,21 +93,32 @@ main {
 
 .mainSection, .aboutSection {
   width: 50%;
-  padding: 3rem;
+  padding: 1.5rem;
+  display: flex;
 }
 
-#heroImage {
-  width: 340px;
-  height: 440px;
+#heroImage, #aboutImage {
+  width: 60%;
+  height: 90%;
   display: block;
-  margin: 0 auto;
+  margin: 2rem auto;
   border-radius: 10px;
   box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
 }
 
+.buttonLink {
+  padding: 8px 12px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  align-self: flex-start;
+}
+
 #department {
-  padding: 2rem 0;
-  margin: 2rem 0;
+  padding: 1rem 0;
+  margin: 1rem 0;
 }
 #department h2 {
   text-align: center;
@@ -96,6 +126,10 @@ main {
 #departmentList {
   display: flex;
   justify-content: space-around;
+}
+
+#departmentList li {
+  list-style-type: none;
 }
 i {
   padding-right: 10px;
@@ -105,7 +139,7 @@ i {
 
 #about {
   display: flex;
-  height: 500px;
+  height: 350px;
 }
 
 #about img {
@@ -117,14 +151,47 @@ i {
   padding-left: 20px;
 }
 
+main, #about, footer {
+  background-color: #cfddea;
+}
+
+#servicesHeading {
+  text-align: right;
+}
+
 #services {
   display: flex;
-  justify-content: space-around;
-  padding: 0 2rem;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+
+.serviceItem {
+  padding: 1.5rem;
 }
 
 footer {
+  padding: 1rem 2rem;
 }
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media screen and (min-width: 1600px) {
+ .container {
+  max-width: 60%;
+ }
+ 
+  main {
+  width: 100%;
+ } 
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 100%;
+  }
+
+  section {
+    width: 100px;
+  }
+}
